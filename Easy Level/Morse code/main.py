@@ -26,12 +26,10 @@ def main(argv):
 	f = open(argv[1])
 
 	for line in f.readlines():
-
 		# Clear line buffer after the line print
 		decoded_line = ''
 
 		for char in line.split(' '):
-
 			# If the char is empty it means that the character is an space
 			if char == '':
 				decoded_line += ' '
